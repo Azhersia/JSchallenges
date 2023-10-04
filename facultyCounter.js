@@ -1,13 +1,13 @@
 import readline from "read-console-input";
+const number = JSON.parse(readline('Give number: '));
 
-const number = Number(readline('Give number: '));
+let factorial = 1;
 
-for (let i = 0; i < number; i++) {
-  if (number > 0) {
+function calculate(number) {
 
-    console.log(number * (number - 1))
+  for (let i = 2; i <= number; i++) {
+    factorial *= i;
   }
 }
-
-
-console.log('faculty of ' + number + ' is:');
+calculate(number);
+console.log('faculty of ' + number + ' is: ' + factorial);
