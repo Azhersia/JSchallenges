@@ -4,8 +4,7 @@ const number = JSON.parse(readline('Give number: '));
 let factorial = 1;
 
 function calculate(number) {
-
-  for (let i = 2; i <= number; i++) {
+  for (let i = 0; i <= number; i++) {
     factorial *= i;
   }
 }
